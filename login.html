@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/shared.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/shared.js"></script>
+    <script src="js/login.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html"><img id="NMITLogo" src="imgs\Nav\NMITLogo.png" alt="NMIT logo"></a>
+      <a id="navbarText" href="home.html">Noodle</a>
+    </nav>
+    <div id="log-Box" class="centreBox">
+      <div id="containerImage">
+        <img src="imgs/nav/before-you-arrive-nmit.jpg" alt="mainPage" />
+      </div>
+
+      <div id="container">
+
+        <form name="login-form" data-name="login-Form">
+          <label for="email_Header" id="email_Header" class="email_Header">Email</label>
+          <br>
+          <input type="email" maxlength="256" placeholder="Enter your email here" id="emailBox" required/>
+          <label for="password_Box" id="password_Header">Password</label>
+
+          <input type="password" maxlength="256" placeholder="Enter you password here" id="passwordBox" required/>
+          <br>
+          <input type="submit" value="Submit" id="submitButton"/>
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>

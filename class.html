@@ -1,0 +1,250 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/shared.css">
+      <link rel="stylesheet" href="css/class.css">
+      <script src="js/shared.js"></script>
+      <script src="js/class.js"></script>
+  </head>
+
+  <header>
+    <nav>
+      <li class="toolsDropdown">
+        <a href="javascript:void(0)" class="dropbtn"><button id="tools">&#x2630;</button></a>
+        <div class="toolsDropdown-content">
+        <a id="dbbutton" href="#">Office 365</a>
+        <a id="dbbutton" href="#">Web Print</a>
+        <a id="dbbutton" href="#">Assessments</a>
+        <a id="dbbutton" href="#">Find a PC</a>
+        <a id="dbbutton" href="#">My Learning Plan</a>
+      </li>
+        <a href="home.html"><img id = "NMITLogo"src="imgs\Nav\NMITLOGO.png" alt="NMIT logo"></a>
+        <a href="home.html" id="navbarText">Noodle</a>
+        <a href="class.html"><button class="courseBtn" id="cBtn1">CSA502</button></a>
+        <a href="class.html"><button class="courseBtn" id="cBtn2">DES501</button></a>
+        <a href="class.html"><button class="courseBtn" id="cBtn3">SDV503</button></a>
+        <a href="class.html"><button class="courseBtn" id="cBtn4">COM502</button></a>
+        <a href="login.html"><button id="btnSO" href="#home">Sign Out</button></a>
+        <a id="navbarProfileText">Travis Byrman</a>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn"><img id = "NMITProfileImg"src="imgs\Nav\navbarProfile.png" alt="NMIT Profile Picture"></a>
+          <div class="dropdown-content">
+            <a id="dbbutton" href="#">Profile</a>
+            <a id="dbbutton" href="#">Preferences</a>
+          </div>
+        </li>
+    </nav>
+  </header>
+
+  <body>
+    <div id="flex">
+      <div id="tutorComment">
+        <h3>Tutor Contact</h3>
+        <div id="backer">
+          <p>Kia Ora students, <br>
+          <br>
+          Please contact me if you have any questions and I will get back to you shortly.<br>
+          <br>
+          Ali Kahwaji<br>
+          <br>
+          IT Tutor<br><br>
+          &#128231; ali.kahwaji@nmit.ac.nz<br><br>
+          &#9742; 03 546 2737<br><br>
+          &#9885; Office G303, NMIT Nelson Campus<br></p>
+        </div>
+      </div>
+      <a id="annoucement" href="#">
+        <div id="annoucement">
+          <h3>Latest Annoucement</h3>
+          <div id="backer">
+            <p>Ali Kahwaji - <b>Today</b> 18 Mar 2020<br>
+            <br>
+            Kia Ora,
+            I will not be on campus today so if you need to contact me you can using one of MS teams or Slack, email, Skype for business.
+            <br><br>
+            Kind regards<br>
+            <br>
+            Ali
+          </div>
+        </div>
+      </a>
+      <div id="calenderBox">
+        <h3>Calender</h3>
+        <div class="calenderOutline jzdbasf calenderBackground">
+          <div class="heading">May - 2020</div>
+            <span>Su</span>
+            <span>Mo</span>
+            <span>Tu</span>
+            <span>We</span>
+            <span>Th</span>
+            <span>Fr</span>
+            <span>Sa</span>
+            <span class="dates"><!--BLANK--></span>
+            <span class="dates"><!--BLANK--></span>
+            <span class="dates"><!--BLANK--></span>
+            <span class="dates"><!--BLANK--></span>
+            <span class="dates"><!--BLANK--></span>
+            <span>1</span>
+            <a href="#"><span class="circle" data-title="COM502 Part B">2</span></a>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <a href="#"><span class="circle" data-title="SDV503 Assessment 2">12</span></a>
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+            <span>19</span>
+            <span>20</span>
+            <span>21</span>
+            <a href="#"><span class="circle" data-title="DES501 Assessment 2">22</span></a>
+            <span>23</span>
+            <span>24</span>
+            <span>25</span>
+            <span>26</span>
+            <span>27</span>
+            <span>28</span>
+            <span>29</span>
+            <span>30</span>
+            <span>31</span>
+            <span class="dates"><!--BLANK--></span>
+            <span class="dates"><!--BLANK--></span>
+            <span class="dates"><!--BLANK--></span>
+            <span class="dates"><!--BLANK--></span>
+            <span class="dates"><!--BLANK--></span>
+          </div>
+        </div>
+      </div>
+
+      <section class="tl-container">
+        <div id="vmDivFlex">
+
+          <h3>DES501</h3>
+
+          <div id="vertical-menu">
+            <a href="#">Home</a>
+            <a href="#">Assessments</a>
+            <a class="channelLinks active" onclick="openChannelTab('tvnz1')">Topics</a>
+            <a class="channelLinks" onclick="openChannelTab('tvnz2')">Resources</a>
+          </div>
+
+          <div class="shownLinks display-first" id="tvnz1">
+                <a class="channelLinks" onclick="location.href='#';">Media Design</a>
+                <a class="channelLinks" onclick="location.href='#';">Web Design</a>
+                <a class="channelLinks" onclick="location.href='#';">User Interface Design</a>
+                <a class="channelLinks" onclick="location.href='#';">User Centered Design</a>
+                <a id="channelLinksa" onclick="location.href='#';">User Experience Design</a>
+                <a class="channelLinks" onclick="location.href='#';">IT Development Lifecycles</a>
+                <a class="channelLinks" onclick="location.href='#';">Information Mangement</a>
+                <a class="channelLinks" onclick="location.href='#';">The IT Business</a>
+          </div>
+
+          <div class="shownLinks" id="tvnz2">
+                <a class="achannelLinks" id="first" onclick="location.href='#';">Course Outline/Schedule</a>
+                <a class="achannelLinks" onclick="location.href='#';">Getting Started</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 1: The IT Business</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 2: Information Management</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 3: IT Development Lifecycles</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 4: User Experience Design</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 4a: User Experience Design</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 4c: User Centered Design</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 5: User Interface Design</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 6: Web Design</a>
+                <a class="achannelLinks" onclick="location.href='#';">Topic 7: Media Design</a>
+          </div>
+        </div>
+      </section>
+
+      <div id="course">
+
+        <section id= "cHeading">
+          <a href="#"><h3>User Experience Design</h3></a>
+        </section>
+
+        <div id="courseContentBackground">
+          <section class="cContainerW">
+            <h3 class = "sectionHeadings">Topic Overview:  User Experience Design</h3>
+            <p>This topic investigates the User experience (UX) and usability concepts in IT.
+            <br>
+            <br>
+            User experience is not a checklist. It is not a set of deliverables.  It is an overall principle and an understanding of group design. It goes beyond the interface.  </p>
+          </section>
+
+          <section class="cContainerG">
+            <h3 class = "sectionHeadings">What is UX (5min 40sec)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ovj4hFxko7c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+          </section>
+
+          <section class="cContainerW">
+            <h3 class = "sectionHeadings">Reading</h3>
+            <p class = "sectionSubHeading">What is user experience design?</p>
+            <p>Check out this informative article to answer these questions for yourself. You may like to record your thoughts and comments on your blog.</p>
+            <a href="#"><button id="courseCBTN" href="#">Smashing Magazine on What Is Experience Design?</button></a>
+          </section>
+
+          <section class="cContainerG">
+            <h3 class = "sectionHeadings">Presentation</h3>
+            <p class = "sectionSubHeading">Aspects of user experience design</p>
+            <p>Select this link to explore some key aspects of user experience that should be considered during system design. Each of these impacts how people feel when they interact with a system.</p>
+            <a href="#"><button id="courseCBTN" href="#">Start Presentation</button></a>
+          </section>
+
+          <section class= "important">
+            <h3 class = "sectionHeadings">Activity 4.1</h3>
+            <p class = "sectionSubHeading">Challenges of user experience design</p>
+            <p>For this activity, you need to:
+              <ol class="courseContentOL">
+                <li>Refer back to the Smashing Magazine on What is User Experience Design? article you looked at earlier in this topic.</li>
+                <li>Record in your course GitBook in your own words at least 4 challenges you see for incorporating experience design when building a system.</li>
+              </ol> 
+            </p>
+          </section>
+
+          <section class= "important">
+            <h3 class = "sectionHeadings">Activity 4.1</h3>
+            <p class = "sectionSubHeading">A closer look at usability</p>
+            <p>This is a group activity.<br>
+            As you have learnt, usability is one important aspect of user experience design. In your groups:
+              <ol class="courseContentOL">
+                <li>Research and discuss how usability and user experience differ from one another.</li>
+                <li>Decide on the things to be considered when assessing the usability of a system?</li>
+                <li>Find at least one example of a system (e.g. website, mobile app, etc.) that demostrates good usability and one with poor usability. Take screenshots to aid in explaining your reasoning for coming to these conclusions.</li>
+                <li>Prepare to present your findings, as a group, in class.</li>
+              </ol> 
+            </p>
+          </section>
+
+          <section class= "important">
+            <h3 class = "sectionHeadings">Activity 4.3</h3>
+            <p class = "sectionSubHeading">Check your knowledge</p>
+            <p>Have a go at this self-check quiz.</p>
+            <a href="#"><button id="courseCBTN" href="#">Self-check quiz: User experience design</button></a>
+          </section>
+
+          <section class="resources">
+            <h3 class = "sectionHeadings">Additional Resources</h3>
+            <p class = "sectionSubHeading">Websites that are here to help.</p>
+            <a href="#"><button id="courseCBTN" href="#">UX Myths</button></a>
+          </section>
+      </div>
+    </div>    
+  </body>
+
+  <footer id="classFoot">
+    &copy; NMIT 2020
+    <a href="#course">Return to the top ^</a>
+  </footer>
+</html>

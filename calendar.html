@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <script src="js/shared.js"></script>
+    <script src="js/calendar.js"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <li class="toolsDropdown">
+            <a href="javascript:void(0)" class="dropbtn"><button id="tools">&#x2630;</button></a>
+            <div class="toolsDropdown-content">
+            <a id="dbbutton" href="#">Office 365</a>
+            <a id="dbbutton" href="#">Web Print</a>
+            <a id="dbbutton" href="#">Assessments</a>
+            <a id="dbbutton" href="#">Find a PC</a>
+            <a id="dbbutton" href="#">My Learning Plan</a>
+          </li>
+          
+        <a href="home.html"><img id="NMITLogo" src="imgs\Nav\NMITLogo.png" alt="NMIT logo"></a>
+        <a href="home.html" id="navbarText">Noodle</a>
+        <a href="class.html"><button id="btn1">CSA502</button></a>
+        <a href="class.html"><button id="btn2">DES501</button></a>
+        <a href="class.html"><button id="btn3">SDV503</button></a>
+        <a href="class.html"><button id="btn4">COM502</button></a>
+        <a href="login.html"><button id="btnSO" href="#home">Sign Out</button></a>
+        <a id="navbarProfileText">Travis Byrman</a>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"><img id="NMITProfileImg" src="imgs\Nav\navbarProfile.png" alt="NMIT Profile Picture"></a>
+            <div class="dropdown-content">
+                <a id="dbbutton" href="#">Profile</a>
+                <a id="dbbutton" href="#">Preferences</a>
+        </li>
+
+
+
+    </nav>
+    <div id="assesmentPageContainer">
+
+        <div class="classFilter-container">
+            <button id= "novd"onclick="toggle('notdue','novd')">Not Due</button>
+            <button id="ovd" onclick="toggle('overdue','ovd')">Overdue</button>
+            <button id="csa" onclick="toggle('classCSA','csa')">CSA502</button>
+            <button id="des" onclick="toggle('classDES','des')">DES501</button>
+            <button id="sdv" onclick="toggle('classSDV','sdv')">SDV503</button>
+            <button id="coms" onclick="toggle('classCOM','coms')">COM</button>
+            <!-- <button id="cal" onclick="toggle('classCAL','cal')">CAL</button> -->
+            <button id="reset" onclick="showAll()">Reset</button>
+        </div>
+
+        <div id="assessmentsTable">
+            <div class="classCSA">
+                <!-- Class -->
+                <div class="CSA">
+                    <h1>CSA502</h1>
+                </div>
+                <!-- Assessment -->
+                <div class="assessmentTicket overdue">
+                    <div>
+                        <h3>Assessment Name</h3>
+                        <p>DD/MM/YY</p>
+                    </div>
+                    <div>
+                        <a><button id="closed" type="button">Closed</button></a>
+                        <h3 id="overdueIdText">Overdue</h3>
+                    </div>
+                </div>
+                <!-- Assessment -->
+                <div id="assessmentsNonOvd1">
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="week-less">6 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="week-more">12 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="two-weeks">24 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="lotDays">51 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="lotDays">100 Days</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="classDES">
+                <!-- Class -->
+                <div class="DES">
+                    <h1>DES501</h1>
+                </div>
+                <div class="assessmentTicket overdue">
+                    <div>
+                        <h3>Assessment Name</h3>
+                        <p>DD/MM/YY</p>
+                    </div>
+                    <div>
+                        <a><button type="button">Criteria</button></a>
+                        <a class="grow"><button type="button">Submit</button></a>
+                        <h3 id="overdueIdText">OVERDUE</h3>
+                    </div>
+                </div>
+                <!-- Assessment -->
+                <div id="assessments">
+                    <div class="assessmentTicket  notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="week-more">10 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="lotDays">40 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="lotDays">60 Days</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="classSDV">
+                <!-- Class -->
+                <div class="SDV">
+                    <h1>SDV503</h1>
+                </div>
+                <!-- Assessment -->
+                <div class="assessmentTicket overdue">
+                    <div>
+                        <h3>Assessment Name</h3>
+                        <p>DD/MM/YY</p>
+                    </div>
+                    <div>
+                        <a><button type="button">Criteria</button></a>
+                        <a class="grow"><button type="button">Submit</button></a>
+                        <h3 id="overdueIdText">OVERDUE</h3>
+                    </div>
+                </div>
+                <!-- Assessment -->
+                <div class="assessmentTicket overdue">
+                    <div>
+                        <h3>Assessment Name</h3>
+                        <p>DD/MM/YY</p>
+                    </div>
+                    <div>
+                        <a><button type="button">Criteria</button></a>
+                        <a class="grow"><button type="button">Submit</button></a>
+                        <h3 id="overdueIdText">OVERDUE</h3>
+                    </div>
+                </div>
+                <!-- Assessment -->
+                <div id="assessmentsNonOvd3">
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="week-less">5 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="week-more">18 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="two-weeks">21 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="two-weeks">25 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="lotDays">31 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="lotDays">40 Days</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="classCOM">
+                <!-- Class -->
+                <div class="COM ">
+                    <h1>COM502</h1>
+                </div>
+                <!-- Assessment -->
+
+                <div class="assessmentTicket overdue">
+                    <div>
+                        <h3>Assessment Name</h3>
+                        <p>DD/MM/YY</p>
+                    </div>
+                    <div>
+                        <a><button type="button">Criteria</button></a>
+                        <a class="grow"><button type="button">Submit</button></a>
+                        <h3 id="overdueIdText">OVERDUE</h3>
+                    </div>
+                </div>
+                <!-- Assessment -->
+                <div id="assessmentsNonOvd4">
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="week-less">2 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="week-less">6 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="week-more">10 Days</h3>
+                        </div>
+                    </div>
+                    <!-- Assessment -->
+                    <div class="assessmentTicket notdue">
+                        <div>
+                            <h3>Assessment Name</h3>
+                            <p>DD/MM/YY</p>
+                        </div>
+                        <div>
+                            <a><button type="button">Criteria</button></a>
+                            <a class="grow"><button type="button">Submit</button></a>
+                            <h3 class="two-weeks">20 Days</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="calenderBox" class="classCAL">
+                <div class="CAL">
+                    <h1>Calender</h1>
+                </div>
+                <div class="calenderbackground">
+                    <div class="heading">May</div>
+                    <span>Su</span>
+                    <span>Mo</span>
+                    <span>Tu</span>
+                    <span>We</span>
+                    <span>Th</span>
+                    <span>Fr</span>
+                    <span>Sa</span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span>1</span>
+                    <a href="#"><span class="circle" id="comA" data-title="COM502 Part B">2</span></a>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <a href="#"><span class="circle" id="sdvA" data-title="SDV503 Assessment 2">12</span></a>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                    <span>19</span>
+                    <span>20</span>
+                    <span>21</span>
+                    <a href="#"><span class="circle" id="desA" data-title="DES501 Assessment 2">22</span></a>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                    <span>30</span>
+                    <span>31</span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                        <span class="dates">
+                            <!--BLANK--></span>
+                </div>
+
+                <div class="calenderbackground">
+                    <div class="heading">June</div>
+                    <span>Su</span>
+                    <span>Mo</span>
+                    <span>Tu</span>
+                    <span>We</span>
+                    <span>Th</span>
+                    <span>Fr</span>
+                    <span>Sa</span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span>1</span>
+                    <a href="#"><span class="circle" id="comA" data-title="COM502 Part B">2</span></a>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <a href="#"><span class="circle" id="sdvA" data-title="SDV503 Assessment 2">12</span></a>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                    <span>19</span>
+                    <span>20</span>
+                    <span>21</span>
+                    <a href="#"><span class="circle" id="desA" data-title="DES501 Assessment 2">22</span></a>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                    <span>30</span>
+                    <span>31</span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                    <span class="dates">
+                        <!--BLANK--></span>
+                        <span class="dates">
+                            <!--BLANK--></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer id="classFoot">
+    &copy; NMIT 2020
+</footer>
+
+</html>

@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --background-J: rgb(223, 247, 255);
+  --background: #f2f2f2;
+  --colour-1: #ffffff;
+  --colour-2: rgb(233, 233, 233);
+  --colour-3: #008fbe;
+  --colour-4: #004f6c;
+  --colour-5: #f7ce3c;
+  --text-1: rgb(0, 0, 0);
+  --text-2: rgb(255, 255, 255);
+  --text-3: rgb(95, 95, 95);
+  --button: #4caf50;
+  --SDV: #b0ab4a;
+  --DES: #9077E6;
+  --CSA: #d9534f;
+  --COM: #47ad64;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Class background Colours */
+
+.SDV {
+  background-color: var(--SDV);
+}
+
+.DES {
+  background-color: var(--DES);
+}
+
+.CSA {
+  background-color: var(--CSA);
+}
+
+.COM {
+  background-color: var(--COM);
+}
+
+/* Class left border ribbons */
+
+#SDV {
+  border-left: 0.25em solid var(--SDV);
+}
+
+#DES {
+  border-left: 0.25em solid var(--DES);
+}
+
+#CSA {
+  border-left: 0.25em solid var(--CSA);
+}
+
+#COM {
+  border-left: 0.25em solid var(--COM);
+}
+
+.week-less {
+  color: rgb(189, 0, 0);
+  padding-left: 0.9em;
+}
+
+.week-more {
+  color: rgb(189, 0, 0);
+  padding-left: 0.9em;
+}
+
+.two-weeks {
+  color: rgb(102, 0, 0);
+  padding-left: 0.9em;
+}
+
+.lotDays {
+  padding-left: 0.9em;
+}
+
+/* Navbar */
+
+img#NMITLogo {
+  padding-top: 5px;
+  padding-left: 0.6em;
+  float: left;
+}
+
+img#NMITProfileImg {
+  width: 2em;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #008fbe;
+  box-shadow: 0px 0px 0.4em #000;
+  z-index: 999;
+}
+
+a#navbarText {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 14px 2px;
+  padding-right: 18px;
+  float: left;
+}
+
+a#navbarProfileText {
+  font-size: 1.3em;
+  margin-top: 2px;
+  float: right;
+  color: #fff;
+  padding-top: 14px;
+  padding-left: 13px;
+  padding-right: 1.3em;
+}
+
+/* Nav Buttons */
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 9px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin-top: 0.58em;
+  margin-left: 0.5em;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+}
+
+button:hover, a#dbbutton:hover {
+  transition: 0.3s;
+}
+
+button#btn1 {
+  background-color: #d9534f;
+  box-shadow: 2px 2px 4px #bd0a06;
+}
+
+button#btn1:hover {
+  background-color: #c24004;
+}
+
+button#btn2 {
+  background-color: #9077E6;
+  box-shadow: 2px 2px 4px #51237a;
+}
+
+button#btn2:hover {
+  background-color: #9043e6;
+}
+
+button#btn3 {
+  background-color: #b0ab4a;
+  box-shadow: 2px 2px 4px #5e5629;
+}
+
+button#btn3:hover {
+  background-color: #9e8d42;
+}
+
+button#btn4 {
+  background-color: #47ad64;
+  box-shadow: 2px 2px 4px #1f4d2c;
+}
+
+button#btn4:hover {
+  background-color: #328f52;
+}
+
+button#btnSO {
+  background-color: #004f6c;
+  float: right;
+  margin-right: 1em;
+  margin-left: 0em;
+}
+
+button#tools {
+  background: none;
+  color: #fff;
+  padding: 0;
+  margin: 11px 2px;
+  font-size: 1.5em;
+  margin-left: 10px;
+  float: left;
+}
+
+.links.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+  float: right;
+  width: 2em;
+  margin-top: 11px;
+}
+
+.dropdown-content, .toolsDropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 9em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a, .toolsDropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover, .toolsDropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content, .toolsDropdown:hover .toolsDropdown-content {
+  display: block;
+}
+
+/**********************************************************************/
+
+li.toolsDropdown {
+  display: inline-block;
+  float: left;
+  width: 2em;
+}
+
+.toolsDropdown-content {
+  margin-left: 0.5em;
+  margin-top: -0.5em;
+}
+
+/*****************************CALENDER**********************************************/
+
+div#homecalenderBox {
+  background-color: #fff;
+  right: 0;
+  z-index: 1;
+  border-radius: 0 0 0.25em 0.25em;
+  box-shadow: 0 0 6px #888888;
+  height: 22em;
+  border-color: var(--colour-3) !important;
+  border: 3px solid #b0ab4a;
+}
+
+.homeheading {
+  /* Header*/
+  font-weight: 700;
+  color: #000;
+  padding: 0.3em 0;
+  display: block;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Dates*/
+
+.homecalenderbackground {
+  margin: auto;
+  width: 20em;
+}
+
+.homecalenderbackground span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  width: 2.7em;
+  height: 2.6em;
+  display: inline-block;
+  float: left;
+  overflow: visible;
+  line-height: 2.4em;
+}
+
+.homecalenderbackground .homedates:before {
+  opacity: 0.3;
+  content: "o";
+  /*blank Dates*/
+}
+
+/*Circles of events*/
+
+span:hover {
+  border-color: #008fbe;
+}
+
+.homecircle {
+  border: 2px solid #004f6c;
+  box-sizing: border-box !important;
+  border-radius: 60em;
+}
+
+span[data-title]:hover:after, div[data-title]:hover:after {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7em;
+  content: attr(data-title);
+  position: absolute;
+  margin: 0;
+  background: #282423;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px #282423;
+  color: #f7f3eb;
+  padding: 0 8px;
+  z-index: 9999;
+}
+
+div#homecalenderBox p {
+  font-size: 1em;
+}
+
+h3#homeCalenderTitle {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.5em;
+  background-color: var(--colour-3) !important;
+  border-radius: 0.25em 0.25em 0 0;
+  padding: 0.3em 0;
+}
+
+/***************FOOTER*****************/
+
+footer#classFoot {
+  height: 2em;
+  padding: 1em 0 0 1em;
+  background-color: #008fbe;
+  color: #fff;
+  box-shadow: 0px 0px 0.4em #000;
+  font-family: "Roboto", sans-serif;
+}
+
+footer a {
+  float: right;
+  padding-right: 1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #f2f2f2;
+  transition: 0.3s;
+}

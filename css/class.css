@@ -1,0 +1,440 @@
+/* CLASS STYLING */
+
+div#course {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 55vw;
+  margin: 6em auto 2em;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 0 10px #f2f2f2;
+  background-color: #fff;
+  border: 3px solid #008fbe;
+  border-radius: 0.8em 0.8em 0em 0em;
+}
+
+div#courseContentBackground {
+  padding: 0 1.5vw;
+}
+
+div#course section:not(#cHeading) {
+  margin: 2em 0;
+}
+
+div#course section p:not(.sectionSubheading) {
+  margin: 0.4em 0.4em 0.9em 1em;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+div#course ol li {
+  margin: 0 0 0.6em 1em;
+}
+
+.sectionSubHeading {
+  font-size: 1.2em;
+  margin: 0 0 1.3em 0.9em;
+  text-decoration: underline;
+}
+
+.courseContentOL li {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+.sectionHeadings {  
+  font-size: 1.3em;
+  margin: 0.6em 0 0.8em 0.8em;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+section#cHeading {
+  background-color: #008fbe;
+  border-radius: 0.5em 0.5em 0em 0em;
+}
+
+section#cHeading h3 {
+  margin: 0.3em 0;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+.cContainerW {
+  background-color: #ffffff;
+  box-shadow: 0 0 6px #b5b5b5;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.cContainerG {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 8px #888888;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.important {
+  border: 2px solid #004f6c;
+  background-color: #b0dceb;
+  box-shadow: 0 0 10px #b0dceb;
+}
+
+.resources {
+  border: 2px solid #6f9470;
+  background-color: #b0ebb1;
+  box-shadow: 0 0 10px #b0ebb1;
+}
+
+.resources .sectionSubheading {
+  margin-bottom: 0.8em;
+}
+
+iframe {
+  margin: 0.3em 0 1.4em 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+button#courseCBTN {
+  margin: 0.6em 0 0.9em 1em;
+  background-color: #004f6c;
+}
+
+button#courseCBTN:hover {
+  background-color: #008fbe;
+}
+
+.courseBtn {
+  background-color: #004f6c;
+  box-shadow: 2px 2px 4px #004f6c;
+}
+
+button#cBtn1:hover {
+  background-color: #d9534f;
+  box-shadow: 2px 2px 4px #bd0a06;
+}
+
+
+button#cBtn2 {
+  background-color: #9077E6;
+  box-shadow: 2px 2px 4px #51237a;
+}
+
+button#cBtn3:hover {
+  background-color: #b0ab4a;
+  box-shadow: 2px 2px 4px #5e5629;
+}
+
+button#cBtn4:hover {
+  background-color: #47ad64;
+  box-shadow: 2px 2px 4px #1f4d2c;
+}
+
+button:hover,
+a#dbbutton:hover {
+  transition: 0.3s;
+}
+
+/****************** DropDownMenu ************************************************/
+
+div#vertical-menu {
+  max-width: 100%;
+  height: 100%;
+  float: left;
+  width: 6.7vw;
+  display: block;
+  background-color: #fff;
+}
+
+div#vertical-menu a {
+  display: block;
+  padding: 1em 0 1em 1em;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+div#vertical-menu a:hover {
+  background-color: #004f6c; /*HOVER FOR TILE TO SELECT*/
+  box-shadow: 0 0 2px #004f6c;
+  color: #fff;
+}
+
+div#vertical-menu a.active {
+  background-color: #008fbe; /*SELECTED TILE COLOUR*/
+  box-shadow: 0 0 1px #008fbe;
+  color: #fff;
+  z-index: 1;
+}
+
+.tl-container {
+  border-top-right-radius: 0.25em;
+  border-top-left-radius: 0.25em;
+  position: absolute;
+  margin-left: 1vw;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  width: 19vw;
+}
+
+.tl-container a {
+  display: flex;
+  flex-direction: column;
+}
+
+.shownLinks a {
+  color: #000;
+  font-size: 16px;
+  padding: 1em;
+  margin-left: 6.7vw; /*THIS IS CHANGING POSITION OF TILES DROPPED DOWN*/
+  background-color: #fff;
+  border-left: 4px solid #008fbe;
+}
+
+div#vmDivFlex h3 {
+  padding-right: 0.5em;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  padding: 0.3em 0;
+  font-size: 1.5em;
+  background-color: #008fbe;
+  border-radius: 0.25em 0.25em 0 0;
+  box-shadow: 0 0 10px #888888;
+}
+
+div#tvnz2 {
+  display: none;
+}
+
+a#channelLinksa {
+  background-color: #008fbe;
+  color: #fff;
+  box-shadow: 0 0 4px #008fbe;
+}
+
+.tl-container a {
+  cursor: pointer;
+}
+
+.tl-container a:hover {
+  transition: 0.3s;
+  color: #fff;
+  background-color: #004f6c;
+  box-shadow: 0 0 3px #008fbe;
+}
+
+/*SIDEBAR******************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+  margin: 0;
+}
+
+div#backer {
+  background-color: #fff;
+  padding-top: 0;
+}
+
+div#tutorComment {
+  background-color: #fff;
+  margin-top: 5vh;
+  right: 0;
+  box-shadow: none;
+  z-index: 1;
+  border-radius: 0.5em;
+  border: 3px solid #47ad64;
+  box-shadow: 0 0 6px #888888;
+}
+
+div#tutorComment p,
+div#annoucement p,
+div#calenderBox p {
+  padding: 1vw;
+  margin: 1vh 0;
+  font-size: 16px;
+}
+
+div#annoucement {
+  background-color: #fff;
+  
+  right: 0;
+  box-shadow: none;
+
+  z-index: 1;
+  border-radius: 0.5em;
+  border: 3px solid #d9534f;
+  box-shadow: 0 0 6px #888888;
+}
+
+div#tutorComment h3,
+div#annoucement h3,
+div#calenderBox h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.5em;
+  background-color: #d9534f;
+  padding: 0.3em 0;
+}
+
+div#tutorComment h3 {
+  background-color: #47ad64;
+}
+
+div#calenderBox h3 {
+  background-color: #b0ab4a;
+}
+
+button:hover,
+a#dbbutton:hover,
+a#annoucement:hover {
+  transition: 0.3s;
+}
+
+a#annoucement {
+  text-decoration: none;
+  color: #000;
+}
+/********************************/
+.btnSide:hover {
+  background-color: #9904c2;
+}
+
+/********************************/
+
+.btnSide {
+  background-color: #008fbe;
+  color: #fff;
+  width: 13em; /*CHANGE WIDTH*/
+  padding: 0.8em 0;
+  font-size: 1em;
+}
+
+/********************************/
+
+footer#classFoot {
+  height: 2em;
+  padding: 1em 0 0 1em;
+  background-color: #008fbe;
+  color: #fff;
+  box-shadow: 0px 0px 0.4em #000;
+  font-family: "Roboto", sans-serif;
+}
+
+footer a {
+  float: right;
+  padding-right: 1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #f2f2f2;
+  transition: 0.3s;
+}
+
+/* Calendar */
+
+div#calenderBox {
+  background-color: #fff;
+  padding-bottom: 1vh;
+  right: 0;
+  box-shadow: none;
+  z-index: 1;
+  border-radius: 0.5em;
+  border: 3px solid #b0ab4a;
+  box-shadow: 0 0 6px #888888;
+}
+
+.calenderBackground {
+  box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  background-color: #fff;
+  width: 90%;
+  padding-left: 2vw;
+}
+
+.heading {
+  /* Header*/
+  font-weight: 700;
+  color: #000;
+  padding: 0.3em 0;
+  display: block;
+  margin-top: 1vh;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Dates*/
+
+.calenderbackground span {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  width: 2vw;
+  height: 3.7vh;
+  display: inline-block;
+  float: left;
+  overflow: visible;
+  line-height: 3.5vh;
+}
+
+.calenderbackground .dates:before {
+  opacity: 0.3;
+  content: "o";
+  /*blank Dates*/
+}
+
+/*Circles of events*/
+
+span:hover {
+  border-color: #008fbe;
+}
+
+.circle {
+  border: 2px solid #004f6c;
+  box-sizing: border-box !important;
+  border-radius: 60em;
+}
+
+span[data-title]:hover:after,
+div[data-title]:hover:after {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  content: attr(data-title);
+  position: absolute;
+  margin: 0;
+  background: #282423;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px #282423;
+  color: #f7f3eb;
+  padding: 0 8px;
+  z-index: 9999;
+}
+
+
+div#flex {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1vw;
+  width: 19vw;
+}
+
+div#calenderBox, div#annoucement {
+  margin-top: 2vh;
+}
+
